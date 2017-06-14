@@ -4,6 +4,8 @@
 
 const fs = require('fs');
 
+console.log("readfile.js - filesystem experiments:\n");
+
 let args = process.argv.splice(process.execArgv.length + 2);
 if (args.length != 1) {
   console.log("Exiting because args.length != 1");
