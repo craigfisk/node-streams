@@ -1,4 +1,8 @@
-/* readable.js */
+/* readstream1.js */
+
+// Note: DeNardi's ReadStream is in ./lib/readStream.js.
+// Our successive experiments, instead, will use ./readstream<n>.js,
+// incrementing as we go, to make notes along the way.
 
 // Create readable stream
 // Usage:
