@@ -1,6 +1,9 @@
 /* readfile.js */
 
 // See differences in type of loaded file, depending on how loaded.
+// How to use:
+//    cd node-streams
+//    node readfile.js ./data-sources/sourceData.json
 
 const fs = require('fs');
 
