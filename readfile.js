@@ -6,10 +6,15 @@ const fs = require('fs');
 
 let args = process.argv.splice(process.execArgv.length + 2);
 if (args.length != 1) {
+  console.log("Exiting because args.length != 1");
   process.exit(1);
 }
 // #1
 var json_file = require('./data-sources/sourceData.json');
+if (!json_file) {
+  console.log("Unable to open ./data-sources/sourceData.json");
+  process.exit(1);
+}
 console.log('#1 json_file type: ' + typeof json_file);
 console.log('json_file length: ' + json_file.length);
 console.log('json_file content: ' + json_file);
