@@ -6,7 +6,8 @@
 
 // Create readable stream
 // Usage:
-//   node readable.js
+//   node
+//   .load readstream1.js
 
 var data = require('./data-sources/sourceData.json'),
   Readable = require('stream').Readable,
@@ -31,3 +32,10 @@ console.log("ReadStream:");
 console.log('Object.keys(ReadStream.prototype)', Object.keys(ReadStream.prototype));
 console.log('Object.keys(ReadStream)', Object.keys(ReadStream));
 console.log('Object.keys(ReadStream.super_.prototype)', Object.keys(ReadStream.super_.prototype));
+
+console.log('How to see the result of instantiating an object from this class?');
+
+var stream = new ReadStream();
+
+console.log('In the node REPL, do: "stream"');
+console.log('and look for objectMode, curIndex, and the data.');
