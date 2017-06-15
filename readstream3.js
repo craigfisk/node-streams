@@ -1,7 +1,8 @@
 /* readstream3.js */
 
 // Non-flowing mode example.
-
+// Usage:
+//   node readstream3.js
 // Non-flowing mode = 'readable' event; flowing-mode = 'data' event. Both end with 'end'.
 
 // See readstream4.js for flowing mode example.
@@ -15,7 +16,7 @@ var stream = new ReadStream();
 
 stream.on('readable', function() {
   while (null !== (record = stream.read())) {
-    console.log('Got "readable" and received: \n\n' + JSON.stringify(record) + '\n');
+    console.log('received: ' + JSON.stringify(record));
   }
 });
 stream.on('end', function() {
