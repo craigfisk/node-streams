@@ -28,5 +28,5 @@ ReadStream.prototype._read = function() {
 
 module.exports = ReadStream;
 
-console.log('_read method now will be in ReadStream.prototype and any object constructed from it.');
-console.log('See readstream3.js');
+// console.log('_read method now will be in ReadStream.prototype and any object constructed from it.');
+// console.log('See readstream3.js');
