@@ -1,4 +1,4 @@
-/* readstream2.js */
+* readstream2.js */
 
 // Create readable stream
 // Usage:
@@ -22,7 +22,7 @@ ReadStream.prototype._read = function() {
     return this.push(null);
 
   var data = this.data[this.curIndex++];
-  console.log('reading: ' + JSON.stringify(data));
+  console.log('read: ' + JSON.stringify(data));
   this.push(data);
 };
 
