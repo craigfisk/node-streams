@@ -1,3 +1,6 @@
+# readfile, readstream<n>, writestream<n>, transformstream<n>
+Added more experiments with streaming.
+
 # node-streams
 Read, write and transform stream examples for node.
 
