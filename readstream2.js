@@ -1,4 +1,4 @@
-* readstream2.js */
+/* readstream2.js */
 
 // Create readable stream
 // Usage:

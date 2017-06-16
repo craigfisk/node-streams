@@ -1,4 +1,4 @@
-/* writestream3.js */
+// writestream3.js 
 
 // Demostrate piping ReadStream to WriteStream
 
