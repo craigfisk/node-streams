@@ -15,13 +15,18 @@ util.inherits(TransformStream, Transform);
 
 TransformStream.prototype._transform = function(chunk, encoding, callback) {
   console.log('transform before : ' + JSON.stringify(chunk));
+  // debugger;
+  //if (typeof chunk.originalValue === 'undefined')
+  //  chunk.originalValue = chunk.value;
+  //chunk.value++;
   debugger;
-  if (typeof chunk.fruitCake === 'undefined')
-    chunk.fruitCake = chunk.value;
-  chunk.value++;
-  debugger;
+  if (chunk.value !== 0) {
+    this.push(chunk);
+  } else {
+    console.log('----- Not going to writestream because chunk.value: ' + chunk.value);
+  }
   console.log('transform after : ' + JSON.stringify(chunk));
-  this.push(chunk);
+  // this.push(chunk);
   callback();
 };
 
