@@ -15,11 +15,11 @@ util.inherits(TransformStream, Transform);
 
 TransformStream.prototype._transform = function(chunk, encoding, callback) {
   console.log('transform before : ' + JSON.stringify(chunk));
-  debugger;
+  // debugger;
   if (typeof chunk.fruitCake === 'undefined')
     chunk.fruitCake = chunk.value;
   chunk.value++;
-  debugger;
+  // debugger;
   console.log('transform after : ' + JSON.stringify(chunk));
   this.push(chunk);
   callback();
