@@ -13,5 +13,6 @@ var rs = new ReadStream();
 var ws = new WriteStream();
 var ts = new TransformStream();
 
+debugger;
 //rs.pipe(ws);
 rs.pipe(ts).pipe(ws);
