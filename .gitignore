@@ -1,0 +1,7 @@
+*~
+*.swp
+*.log
+node_modules/
+assets/
+*.csv
+output.json
